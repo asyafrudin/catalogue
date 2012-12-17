@@ -38,12 +38,11 @@ HOW TO SETUP
 FILES WORTH LOOKING
 ===================
 Here are the list of files you should pay attention if you want to make further modification:
-
-  application/controllers/*.php
-  application/models/*.php
-  application/views/*.php
-  application/libraries/*.php
-  css/*
-  js/*
+- application/controllers/*.php
+- application/models/*.php
+- application/views/*.php
+- application/libraries/*.php
+- css/*
+- js/*
 
 NOTE: sql/catalogue.sql are important to import the neccessary database objects for this project.
