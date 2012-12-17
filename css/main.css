@@ -1,0 +1,41 @@
+* { /* Universal CSS Reset */
+margin: 0;
+padding: 0;
+}
+#background-header, #header {
+height: 58px;
+}
+#background-header {
+background-color: #5c9ccc;
+}
+#header {
+color: #ffffff;
+padding-top: 5px;
+}
+#tagline {
+float: right;
+font-family: sans-serif;
+font-size: 8pt;
+font-style: italic;
+}
+#container {
+margin: auto;
+width: 900px;
+}
+.spacer {
+height: 10px;
+}
+th {
+text-align: center !important;
+}
+/* Custom style for data tables */
+td.price {
+text-align: right;
+}
+td.center {
+text-align: center;
+}
+/* jQuery UI overrides */
+.ui-button-text {
+font-size: 11px;
+}

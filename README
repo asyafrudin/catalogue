@@ -1,0 +1,49 @@
+***********
+DESCRIPTION
+===========
+This is a sample project containing a running copy of CodeIgniter integrated with DataTables and jeditable to implement a simple product catalogue. This project is nowhere near an actual catalogue. It only shows how to build a simple data management application with DataTables and jeditable as the front-end and CodeIgniter as the back-end of the application. The following basic functionalities are available:
+- List of existing products.
+- Add new product.
+- Delete existing product.
+- Edit existing product.
+
+Listing of products (Product List) are implemented using DataTables. Delete functionality is implemented with custom delete buttons for each row of data in the Product List. Edit functionality is implemented with in-place editor supported by jeditable. Add functionality is implemented with standard HTML form.
+
+Each Product has their own Category. With a many-to-one relationship between Product and Category, this project also shows how to list data from multiple table in DataTables. It also shows how to implement in-place editing of each Product's Category using built-in drop down list feature in jeditable.
+
+******************
+TOOLS OF THE TRADE
+==================
+- CodeIgniter (2.1.3).
+  http://codeigniter.com/  
+- jQuery (1.8.2)
+  http://jquery.com/
+- jQuery UI (1.9.1)
+  http://jqueryui.com/
+- DataTables (1.9.4).
+  http://datatables.net/
+- jeditable (November 23, 2012)
+  http://www.appelsiini.net/projects/jeditable
+- Ignited-Datatables (November 26, 2012)
+  https://github.com/IgnitedDatatables/Ignited-Datatables/
+
+************
+HOW TO SETUP
+============
+0. Import required database from sql/catalogue.sql.
+1. Add a copy of CodeIgniter's database.php config file to application/config/ tailored to suit your local MySQL database configuration.
+2. Off you go!
+
+*******************
+FILES WORTH LOOKING
+===================
+Here are the list of files you should pay attention if you want to make further modification:
+
+  application/controllers/*.php
+  application/models/*.php
+  application/views/*.php
+  application/libraries/*.php
+  css/*
+  js/*
+
+NOTE: sql/catalogue.sql are important to import the neccessary database objects for this project.
