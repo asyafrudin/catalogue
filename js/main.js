@@ -23,11 +23,12 @@ $(document).ready(function() {
 		"bServerSide": true,
 		"sAjaxSource": "index.php/product/get",
 		"aoColumns": [
-			{ "sClass": "code", "mData": 0 },
-			{ "sClass": "description", "mData": 1 },
-			{ "sClass": "price", "mData": 2 },
-			{ "sClass": "category", "mData": 3 },
-			{ "sClass": "center", "bSortable": false, "bSearchable": false, "sWidth": "70px", "mData": "DT_RowId", 
+			{ "sClass": "num center", "mData": 0, "bSortable": false, "bSearchable": false, "sWidth": "50px" },
+			{ "sClass": "code", "mData": 1 },
+			{ "sClass": "description", "mData": 2 },
+			{ "sClass": "price", "mData": 3 },
+			{ "sClass": "category", "mData": 4 },
+			{ "sClass": "center", "mData": "DT_RowId", "bSortable": false, "bSearchable": false, "sWidth": "70px", 
 				"mRender": function(data, type, full) {
 					return "<button class='delete' id='" + data + "'>Delete</button>";
 				}

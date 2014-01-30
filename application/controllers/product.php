@@ -6,7 +6,7 @@ class Product extends CI_Controller
 	public function get()
 	{
 		$this->load->library('datatables');
-		$result = $this->datatables->getData('v_product', array('code', 'description', 'price', 'category'), 'code');
+		$result = $this->datatables->getData('v_product', array('code', 'description', 'price', 'category'), 'code', true);
 		
 		echo $result;
 	}

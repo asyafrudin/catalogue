@@ -26,6 +26,7 @@
 					<table id="products">
 						<thead>
 							<tr>
+								<th>No.</th>
 								<th>Code</th>
 								<th>Description</th>
 								<th>Price</th>

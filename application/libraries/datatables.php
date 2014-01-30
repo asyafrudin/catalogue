@@ -6,8 +6,9 @@ class Datatables
 	 * $sTable: Source table in database.
 	 * $aColumns: Columns in source table.
 	 * $idColumn: The ID column within columns.
+	 * $useNumbering: The flag used to indicate the use of numbering for query results.
 	 */
-	public function getData($sTable, $aColumns, $idColumn)
+	public function getData($sTable, $aColumns, $idColumn, $useNumbering)
 	{
 		// Loads CodeIgniter's Database Configuration
 		$CI =& get_instance();
@@ -62,10 +63,19 @@ class Datatables
 			'aaData' => array()
 		);
 		
+		$num = 1; // Used for numbering query results
 		foreach($rResult->result_array() as $aRow)
 		{
 			$row = array();
 			
+			// Numbering
+			if ($useNumbering)
+			{
+				$row[] = $num."";
+				$num++;
+			}
+
+			// Data
 			foreach($aColumns as $col)
 			{
 				$row[] = $aRow[$col];
