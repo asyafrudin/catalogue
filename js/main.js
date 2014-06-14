@@ -22,6 +22,7 @@ $(document).ready(function() {
 		"bProcessing": false,
 		"bServerSide": true,
 		"sAjaxSource": "index.php/product/get",
+		"aaSorting": [[1, "asc"]], // Set default sort by "code" column
 		"aoColumns": [
 			{ "sClass": "num center", "mData": 0, "bSortable": false, "bSearchable": false, "sWidth": "50px" },
 			{ "sClass": "code", "mData": 1 },

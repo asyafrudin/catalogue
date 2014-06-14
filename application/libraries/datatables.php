@@ -44,6 +44,12 @@ class Datatables
 			}
 		}
 		
+		// June 14, 2014:
+		// Minor tweak due to the difference between the number of columns between the table in the database and the datatable shown in the UI when using numbering
+		if ($useNumbering)
+		{
+			array_shift($aColumns);
+		}
 		// Select data
 		$CI->db->select('SQL_CALC_FOUND_ROWS '.str_replace(' , ', ' ', implode(', ', $aColumns)), false);
 		$rResult = $CI->db->get($sTable);
