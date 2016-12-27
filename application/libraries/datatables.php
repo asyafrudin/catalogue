@@ -63,7 +63,7 @@ class Datatables
 		
 		// Output
 		$output = array(
-			'sEcho' => intval($_GET['sEcho']),
+			'sEcho' => isset($_GET['sEcho']) ? (int) $_GET['sEcho'] : 0,
 			'iTotalRecords' => $iTotal,
 			'iTotalDisplayRecords' => $iFilteredTotal,
 			'aaData' => array()
